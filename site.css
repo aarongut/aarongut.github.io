@@ -18,9 +18,35 @@ body {
 
 h1 {
   color: #fff;
+  font-size: 4em;
+  font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+  color: #fff;
   text-align: center;
   font-size: 4em;
   font-family: 'Dancing Script', cursive;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.tree {
+  margin-right: auto;
+  margin-left: auto;
+
+  display: block;
+  margin-top: 16px;
+}
+
+img.logo {
+  float: left;
+  display: block;
+  margin-left: 20%;
+  height: 8em;
 }
 
 .main {
@@ -34,10 +60,15 @@ h1 {
 @media (min-width: 960px) {
   h1 {
     font-size: 8em;
+    margin-bottom: 98px;
   }
 
   .main {
     width: 60%;
+  }
+
+  img.logo {
+    height: 100%;
   }
 }
 
