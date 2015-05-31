@@ -65,7 +65,7 @@ img.logo {
 @media (min-width: 960px) {
   h1 {
     font-size: 6em;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     text-align: left;
   }
 
