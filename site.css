@@ -30,6 +30,14 @@ h2 {
   font-family: 'Dancing Script', cursive;
 }
 
+h5 {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive;
+}
+
+
 .center {
   margin-right: auto;
   margin-left: auto;
