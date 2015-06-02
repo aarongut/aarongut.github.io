@@ -37,6 +37,11 @@ h5 {
   font-family: 'Dancing Script', cursive;
 }
 
+p {
+  color: #fff;
+  font-size: 1.4em;
+}
+
 
 .center {
   margin-right: auto;
