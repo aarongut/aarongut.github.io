@@ -39,10 +39,6 @@
          data-lang="en">Follow @TreeOhFour
       </a>
 
-      <a class="sam" href="https://tinyurl.com/pjds2xa">
-        <h2 id="sam">Help Make the World Better</h2>
-        <p>SIGN TO MAKE WORLD BETTER</p>
-      </a>
       <h2>Trees in the News</h2>
         <a class="twitter-timeline" href="https://twitter.com/hashtag/tree" data-widget-id="603790621069967360">#tree Tweets</a>
       <h2>Meet the trees</h2>
@@ -56,19 +52,26 @@
 
       <h2>Chuck Norris Fact</h2>
       <p id="chuck"></p>
+      <button onclick="chuck()" class="btn-chuck">
+        Click for More Facts
+      </button>
 
       <h2>Local Weather</h2>
       <img class="weather" src="http://image.weather.com/images/maps/current/ne_curtemp_720x486.jpg">
       <img class="weather" src="http://image.weather.com/web/radar/us_pit_metroradar_large_usen.jpg">
     </div>
     <script type="text/javascript">
-$(function() {
+function chuck() {
   $.ajax({
     url: "http://api.icndb.com/jokes/random",
     success: function(result) {
       $("#chuck").html(result.value.joke);
     }
   });
+}
+
+$(function() {
+  chuck();
 });
     </script>
     <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
